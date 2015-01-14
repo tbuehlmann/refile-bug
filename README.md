@@ -7,7 +7,7 @@ PoC App to show that an uploaded image will make the record invalid all the time
 ```sh
 git clone git@github.com:tbuehlmann/refile-bug.git
 cd refile-bug
-bundle install
+bin/setup
 bin/rails runner "Movie.last.tap { |m| m.valid?; puts m.errors.inspect }"
 ```
 
