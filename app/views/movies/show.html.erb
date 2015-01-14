@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<%= attachment_image_tag @movie, :image %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.name %>
+</p>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>
